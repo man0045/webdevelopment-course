@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes and aniomation</title>
+    <style>
+        .container{
+            /*display: flex;*/
+            background-color: green;
+        }
+        .box{
+            background-color: greenyellow;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation-name: mannu2;
+            animation-duration: 8s;
+           animation-iteration-count: 1;
+            /*animation-fill-mode: alternate;*/
+            /*animation-timing-function: ease-in-out;*/
+            /*animation-delay: 3s;*/
+            /*animation-direction: reverse;*/
+        }
+        
+        @keyframes mannu2 {
+            0%{
+                top: 0px;
+                left: 0px;
+
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+
+            }
+        }
+        @keyframes mannu1 {
+            from{
+                width: 200px;
+
+            }
+            to{
+                width: 400px;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            this is a box
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+           /* border: 2px solid greenyellow;*/
+            margin: 23px 12px;
+            background-color: darkmagenta;
+            box-shadow: 10px 23px gray;
+            box-shadow:inset;
+
+        }
+        .card h2{
+            text-shadow: 3px 4px green;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+         <h2>this is a python programming</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum placeat voluptates doloremque delectus nam, voluptatem impedit, corporis consequuntur laborum nisi ducimus maiores repudiandae ratione culpa eius quasi voluptatibus ipsa id fuga dolorum praesentium possimus.</p>
+        </div>
+        <div class="card" id="card-2">
+           <h2>this is a object oriented language</h2>
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque culpa iste itaque, quos dolores amet dolorem nemo aliquid! Provident vitae magnam numquam consectetur repudiandae! In fuga eum autem commodi rem amet doloribus et velit.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>thid is my sql with database management system</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea obcaecati alias consequatur dolorum voluptatem molestias quidem. In error repellendus et, nemo dolores reprehenderit, iusto exercitationem laboriosam maiores nam illo perferendis. Alias, placeat temporibus.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

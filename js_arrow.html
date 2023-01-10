@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    this is a arrow function
+</div>    
+</body>
+<script>
+ greet = ()=>{
+        console.log('good morning');
+    }
+    //let sum = (a,b)=> a+b;
+    //{
+        //return a+b;
+    //};
+    //greet();
+    setTimeout(() => {
+        console.log("we are set timed out")
+
+    }, 3000);
+    let obj1={
+        names: ["harry" , "rohan" ,"mannu"],
+        speak(){
+            this.names.forEach((students)=>{
+                console.log("fuck you" + students);
+
+            });
+        }
+    }
+    obj1.speak();
+</script>
+</html>

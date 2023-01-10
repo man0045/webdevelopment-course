@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selectors</title>
+    <style>
+        h1{
+            color: aqua;
+            background-color: blueviolet;
+            text-align: center;
+        }
+        div p{
+            /*color: greenyellow;
+            font-weight: bold;*/
+        }
+        div > p /*this property is used just after the div words in a programming sysytem in specific row and column*/{
+            color: silver;
+            background-color: sienna;
+        }
+        div + p/*this another property is used for the identification of their sibling property just like an sibling*/{
+            color: blueviolet;
+            background-color: crimson;
+        } 
+
+    </style>
+</head>
+<body>
+    <h1>this is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>this is another padagraph in row and column form having some selectors in c</p></li>
+            </ul>
+            <p>this is paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outermost paragraph</p>
+</body>
+</html>

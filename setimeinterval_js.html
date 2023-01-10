@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set timedout amd time unterval</title>
+</head>
+<body>
+    <div class="container">
+        time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log("this is javascript");
+        //setTimeout --> allows us to run the function once after the interval of time
+        //clearTimeout --> allows us to run the function repeatedly after the interval of time
+        function greet(name, byeText) {
+            console.log("hello good morning" + name + "" + byeText);
+        }
+        //setTimeout(greet,5,"mannu","being happy and healthy");
+        //console.log(timeout);
+        //intervalId = setInterval(greet, 1000,"mannu", "good night");
+        //clearInterval(intervalId);
+
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime, 1000);
+    
+    </script>
+</body>
+</html>

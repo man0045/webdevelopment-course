@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            font-weight: bolder;
+            height: 25px;
+            width: 79px;
+            background-color: coral;
+            font-family: 'baloo bhai',cursive;
+            cursor: pointer;
+            border-radius: 13px;
+            border: 2px solid goldenrod;
+        }
+    </style>
+</head>
+<body>
+<!--browser events:
+click
+context
+mouse over/mouse out
+mousedown/mouseup
+mousemove
+
+submit
+focus
+
+DOMcontentLoaded
+
+transitionen-->
+<div class="container">
+    <h1>this is my heading</h1>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur officia corporis asperiores accusantium, praesentium eligendi tempora porro voluptas similique autem voluptatem natus maiores, minima ex sunt non blanditiis laudantium, modi corrupti accusamus odio. Eum?</p>
+  <button id="btn" onclick="toggleHide()">show/hide</button> 
+</div>
+<script>
+   // let para = document.getElementById('para');
+    //para.addEventListener('mouseout', function run(){
+      //  alert('mouse inside')
+    function toggleHide(){
+     let btn = document.getElementById('btn');
+     let para = document.getElementById('para');
+     if(para.style.display != 'none')
+     {
+        para.style.display='none';
+     }
+     else{
+        para.style.display='block';
+     }
+    }
+</script>
+</body>
+</html>

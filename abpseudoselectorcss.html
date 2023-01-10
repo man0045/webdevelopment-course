@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudoselector</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+            background: url(' https://webneel.com/wallpaper/sites/default/files/images/08-2018/4-nature-wallpaper-sky.preview.jpg') no-repeat center center/cover;
+        }
+        header::before{
+            background:url('https://webneel.com/wallpaper/sites/default/files/images/08-2018/4-nature-wallpaper-sky.preview.jpg') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        .navigation{
+            display: flex;
+            font-size: 20px;
+        }
+        li{
+            list-style: none;
+            padding: 34px 23px;
+            display: inline;
+            font-family: 'baloo bhai',cursive;
+        }
+        li:hover{
+            color: blueviolet;
+            cursor: pointer;
+
+        }
+        section{
+            margin: 3px 23px;
+            height: 344px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: 'baloo bhai',cursive;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+<nav class="navbar"></nav>
+<ul>
+    <li class="item">home</li>
+    <li class="item">about</li>
+    <li class="item">services</li>
+    <li class="item">contact us</li>
+</ul>
+    </header>
+    <section>
+        <h1>welcome to new era of IT</h1>
+        <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga assumenda temporibus magnam quos, quis ducimus placeat tempore est nam reprehenderit nisi voluptate illum deleniti animi aspernatur dolor aliquid atque ab. adipisicing elit. Repellat autem totam, obcaecati culpa expedita incidunt inventore soluta, ab ut, pariatur assumenda maxime! Repellendus saepe necessitatibus id ratione eius perspiciatis veritatis nam repudiandae optio deserunt.</p>
+    </section>
+    <hr>
+</body>
+</html>

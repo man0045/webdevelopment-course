@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility and x index</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box1{
+            z-index: -35;
+            position: relative;
+            top: 49px;
+            background-color: green;}
+        #box2{
+            z-index: -149;
+            position: relative;
+            top: 14px;
+            /*visibility: hidden;*/ /*in visibility hidden onlybox hide*/
+            /*display: none;*/ /*in display none both place and box will get hided*/
+           background-color: blue;}
+        #box3{background-color: red;}
+        #box4{background-color: violet;}
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
